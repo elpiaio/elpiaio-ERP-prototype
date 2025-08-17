@@ -1,3 +1,4 @@
+// src/Types/order.ts
 import { Product } from "./product";
 
 export type OrderItem = {
@@ -6,7 +7,7 @@ export type OrderItem = {
   quantity: number;
   price: number;
   total: number;
-  product?: Product; // optional, help for UI
+  product?: Product; // opcional para UI
 };
 
 export type OrderStatus = "pendente" | "concluido" | "cancelado";
@@ -18,4 +19,7 @@ export type Order = {
   total: number;
   status?: OrderStatus;
   createdAt: string; // ISO
+  pickupAt?: string | null; // ISO string (data/hora de retirada) — opcional
+  createdById?: string | null; // id do funcionário que criou o pedido
+  createdByName?: string | null; // nome do funcionário
 };

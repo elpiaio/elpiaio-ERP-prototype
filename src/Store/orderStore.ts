@@ -30,10 +30,9 @@ export const useOrderStore = create<OrderState>((set) => ({
     }
   },
 
-  addOrder: async (order) => {
+  addOrder: async (order: NewOrder) => {
     set({ loading: true });
     try {
-      // sem "any" — usa a tipagem correta NewOrder
       const created = await orderService.create(order);
       set((state) => ({ orders: [...state.orders, created] }));
     } catch (err) {
@@ -48,3 +47,4 @@ export const useOrderStore = create<OrderState>((set) => ({
     set({ orders: [] });
   },
 }));
+ 

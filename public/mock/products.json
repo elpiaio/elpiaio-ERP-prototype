@@ -1,0 +1,38 @@
+[
+  {
+    "id": "p1",
+    "sku": "PF-001",
+    "name": "Pão Francês",
+    "price": 0.5,
+    "unit": "un",
+    "category": "Pães",
+    "active": true
+  },
+  {
+    "id": "p2",
+    "sku": "BO-002",
+    "name": "Bolo de Chocolate",
+    "price": 25.0,
+    "unit": "un",
+    "category": "Bolos",
+    "active": true
+  },
+  {
+    "id": "p3",
+    "sku": "SE-003",
+    "name": "Coxinha",
+    "price": 3.5,
+    "unit": "un",
+    "category": "Salgados",
+    "active": true
+  },
+  {
+    "id": "p4",
+    "sku": "PI-004",
+    "name": "Pão Integral",
+    "price": 0.8,
+    "unit": "un",
+    "category": "Pães",
+    "active": true
+  }
+]

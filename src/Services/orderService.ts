@@ -1,13 +1,11 @@
+// src/Services/orderService.ts
 import { fetchJson } from "@/Libs/api";
 import { Order } from "@/Types/order";
 
 const STORAGE_KEY = "mock_orders_v1";
 
 /**
- * Strategy:
- * - on first load, read public/mock/orders.json and persist to localStorage
- * - subsequent reads use localStorage (so new created orders persist across reloads)
- * - create simula POST atualizando localStorage
+ * Agora aceita partials com pickupAt e createdBy*
  */
 async function loadInitial(): Promise<Order[]> {
   const raw = localStorage.getItem(STORAGE_KEY);
@@ -18,7 +16,6 @@ async function loadInitial(): Promise<Order[]> {
       localStorage.removeItem(STORAGE_KEY);
     }
   }
-  // fallback: fetch the mock file
   const data = await fetchJson<Order[]>("/mock/orders.json");
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   return data;
@@ -29,21 +26,26 @@ export const orderService = {
     return await loadInitial();
   },
 
-  async create(partial: Omit<Order, "id" | "createdAt"> & { id?: string }): Promise<Order> {
+  async create(partial: Partial<Omit<Order, "id" | "createdAt">> & { customerName: string; items: Order["items"]; total: number; createdById?: string | null; createdByName?: string | null; pickupAt?: string | null }): Promise<Order> {
     const current = await loadInitial();
+    const nowIso = new Date().toISOString();
     const newOrder: Order = {
-      id: partial.id ?? Date.now().toString(),
-      createdAt: new Date().toISOString(),
-      ...partial,
+      id: Date.now().toString(),
+      createdAt: nowIso,
+      customerName: partial.customerName,
+      items: partial.items ?? [],
+      total: partial.total,
+      status: partial.status ?? "pendente",
+      pickupAt: partial.pickupAt ?? null,
+      createdById: partial.createdById ?? null,
+      createdByName: partial.createdByName ?? null,
     };
     current.push(newOrder);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
-    // small simulated latency
-    await new Promise((r) => setTimeout(r, 200));
+    await new Promise((r) => setTimeout(r, 150)); // simula latência
     return newOrder;
   },
 
-  // optional helper to clear mock (dev)
   async clear(): Promise<void> {
     localStorage.removeItem(STORAGE_KEY);
   },
