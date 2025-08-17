@@ -1,0 +1,35 @@
+[
+    {
+      "id": "1",
+      "customerName": "João Silva",
+      "items": [
+        {
+          "productId": "p1",
+          "productName": "Pão Francês",
+          "quantity": 10,
+          "price": 0.5,
+          "total": 5
+        }
+      ],
+      "total": 5,
+      "status": "pendente",
+      "createdAt": "2025-08-16T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "customerName": "Maria Oliveira",
+      "items": [
+        {
+          "productId": "p2",
+          "productName": "Bolo de Chocolate",
+          "quantity": 1,
+          "price": 25,
+          "total": 25
+        }
+      ],
+      "total": 25,
+      "status": "concluido",
+      "createdAt": "2025-08-16T11:00:00.000Z"
+    }
+  ]
+  

@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "cliente": "João Silva",
+      "produto": "Pão Francês",
+      "quantidade": 10,
+      "preco": 0.5,
+      "data": "2025-08-16"
+    },
+    {
+      "id": 2,
+      "cliente": "Maria Oliveira",
+      "produto": "Bolo de Chocolate",
+      "quantidade": 1,
+      "preco": 32.0,
+      "data": "2025-08-16"
+    }
+  ]
+  
