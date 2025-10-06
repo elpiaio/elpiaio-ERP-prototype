@@ -58,6 +58,35 @@ export const orderService = {
     return newOrder;
   },
 
+   /**
+   * Update: recebe id e um objeto parcial com os campos a atualizar.
+   * Retorna o order atualizado.
+   */
+  async update(id: string, patch: Partial<Order>): Promise<Order> {
+    const current = await loadInitial();
+    const idx = current.findIndex((o) => o.id === id);
+    if (idx === -1) throw new Error("Order not found");
+
+    const target = current[idx];
+    const merged: Order = {
+      ...target,
+      ...patch,
+      // if pickupAt provided and is parsable as local datetime, normalize to ISO
+      pickupAt:
+        patch.pickupAt !== undefined && patch.pickupAt !== null
+          ? (() => {
+              const d = new Date(patch.pickupAt as string);
+              return !isNaN(d.getTime()) ? d.toISOString() : (patch.pickupAt as string);
+            })()
+          : target.pickupAt ?? null,
+    };
+
+    current[idx] = merged;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
+    await new Promise((r) => setTimeout(r, 120));
+    return merged;
+  },
+
   async clear(): Promise<void> {
     localStorage.removeItem(STORAGE_KEY);
   },

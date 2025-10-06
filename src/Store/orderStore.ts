@@ -10,6 +10,7 @@ interface OrderState {
   loading: boolean;
   fetchOrders: () => Promise<void>;
   addOrder: (order: NewOrder) => Promise<void>;
+  updateOrder: (id: string, patch: Partial<Order>) => Promise<Order | void>;
   clearMock: () => Promise<void>;
 }
 
@@ -37,6 +38,24 @@ export const useOrderStore = create<OrderState>((set) => ({
       set((state) => ({ orders: [...state.orders, created] }));
     } catch (err) {
       console.error("addOrder error", err);
+    } finally {
+      set({ loading: false });
+    }
+  },
+
+  updateOrder: async (id, patch) => {
+    set({ loading: true });
+    try {
+      const updated = await orderService.update(id, patch);
+      if (updated) {
+        set((state) => ({
+          orders: state.orders.map((o) => (o.id === id ? updated : o)),
+        }));
+      }
+      return updated;
+    } catch (err) {
+      console.error("updateOrder error", err);
+      throw err;
     } finally {
       set({ loading: false });
     }
