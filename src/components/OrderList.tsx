@@ -46,26 +46,23 @@ export const OrderList: React.FC = () => {
                 <div className="mt-2 text-sm">
                   {o.items.map((it) => (
                     <div key={it.productId} className="flex gap-4">
-                      <div className="w-56 truncate">{it.productName}</div>
+                      <div className="w-56">{it.productName}</div>
                       <div>{it.quantity} x R${it.price.toFixed(2)}</div>
                       <div className="font-semibold">R${it.total.toFixed(2)}</div>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-3 text-sm text-slate-600">
-                  <div>Retirada: {o.pickupAt ? new Date(o.pickupAt).toLocaleString() : "—"}</div>
-                  <div>Criado por: {o.createdByName ?? "—"}</div>
-                </div>
+
+
               </div>
 
               <div className="text-right">
                 <div className="text-lg font-bold">R${o.total.toFixed(2)}</div>
                 <div className="mt-2">
-                  <span className={`inline-block px-2 py-0.5 rounded text-xs ${
-                    o.status === "pendente" ? "bg-yellow-100 text-yellow-800" :
-                    o.status === "concluido" ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"
-                  }`}>{o.status}</span>
+                  <span className={`inline-block px-2 py-0.5 rounded text-xs ${o.status === "pendente" ? "bg-yellow-100 text-yellow-800" :
+                      o.status === "concluido" ? "bg-green-100 text-green-800" : "bg-gray-100 text-gray-800"
+                    }`}>{o.status}</span>
                 </div>
               </div>
             </Card>

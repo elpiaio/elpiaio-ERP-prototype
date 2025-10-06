@@ -17,13 +17,15 @@ export const OrderList: React.FC = () => {
         <p>No orders found</p>
       ) : (
         <ul className="space-y-2">
-          {orders.map((order) => (
-            <li key={order.id} className="p-2 border rounded">
-              <p><strong>Customer:</strong> {order.customerName}</p>
-              <p><strong>Total:</strong> ${order.total.toFixed(2)}</p>
-              <p><strong>Created At:</strong> {order.createdAt.toString()}</p>
-            </li>
-          ))}
+          {
+            orders.map((order) => (
+              <li key={order.id} className="p-2 border rounded">
+                <p><strong>Customer:</strong> {order.customerName}</p>
+                <p><strong>Total:</strong> ${order.total.toFixed(2)}</p>
+                <p><strong>Created At:</strong> {order.createdAt.toString()}</p>
+              </li>
+            ))
+          }
         </ul>
       )}
     </div>

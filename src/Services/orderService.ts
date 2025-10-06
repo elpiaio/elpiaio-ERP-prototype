@@ -4,9 +4,7 @@ import { Order } from "@/Types/order";
 
 const STORAGE_KEY = "mock_orders_v1";
 
-/**
- * Agora aceita partials com pickupAt e createdBy*
- */
+/** Carrega dados iniciais do localStorage ou do arquivo /mock/orders.json */
 async function loadInitial(): Promise<Order[]> {
   const raw = localStorage.getItem(STORAGE_KEY);
   if (raw) {
@@ -26,23 +24,37 @@ export const orderService = {
     return await loadInitial();
   },
 
-  async create(partial: Partial<Omit<Order, "id" | "createdAt">> & { customerName: string; items: Order["items"]; total: number; createdById?: string | null; createdByName?: string | null; pickupAt?: string | null }): Promise<Order> {
+  /**
+   * partial: Omit<Order, "id" | "createdAt">
+   * cria id e createdAt automaticamente. Mantém pickupAt se fornecido.
+   */
+  async create(partial: Omit<Order, "id" | "createdAt"> & { id?: string }): Promise<Order> {
     const current = await loadInitial();
     const nowIso = new Date().toISOString();
+
+    // normalize pickup (if passed as Date string like '2025-08-16T17:30' from datetime-local, convert to ISO)
+    let pickupIso: string | null | undefined = undefined;
+    if (partial.pickupAt) {
+      // try to create ISO -- if already ISO, this preserves; if local 'YYYY-MM-DDTHH:mm' it converts to ISO
+      const d = new Date(partial.pickupAt);
+      if (!isNaN(d.getTime())) {
+        pickupIso = d.toISOString();
+      } else {
+        pickupIso = partial.pickupAt as string;
+      }
+    }
+
     const newOrder: Order = {
-      id: Date.now().toString(),
+      id: partial.id ?? Date.now().toString(),
       createdAt: nowIso,
-      customerName: partial.customerName,
-      items: partial.items ?? [],
-      total: partial.total,
-      status: partial.status ?? "pendente",
-      pickupAt: partial.pickupAt ?? null,
-      createdById: partial.createdById ?? null,
-      createdByName: partial.createdByName ?? null,
+      ...partial,
+      pickupAt: pickupIso ?? null,
     };
+
     current.push(newOrder);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(current));
-    await new Promise((r) => setTimeout(r, 150)); // simula latência
+    // simulated latency
+    await new Promise((r) => setTimeout(r, 150));
     return newOrder;
   },
 

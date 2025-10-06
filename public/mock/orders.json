@@ -14,9 +14,7 @@
     "total": 5,
     "status": "pendente",
     "createdAt": "2025-08-16T10:00:00.000Z",
-    "pickupAt": "2025-08-17T08:30:00.000Z",
-    "createdById": "u1",
-    "createdByName": "Carlos"
+    "pickupAt": "2025-08-16T17:30:00.000Z"
   },
   {
     "id": "2",
@@ -33,8 +31,6 @@
     "total": 25,
     "status": "concluido",
     "createdAt": "2025-08-16T11:00:00.000Z",
-    "pickupAt": null,
-    "createdById": "u2",
-    "createdByName": "Ana"
+    "pickupAt": null
   }
 ]

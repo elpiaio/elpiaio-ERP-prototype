@@ -1,13 +1,12 @@
 // src/Components/OrderForm.tsx
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useOrderStore } from "@/Store/orderStore";
 import ProductSelect from "./ProductSelect";
 import { Product } from "@/Types/product";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { employeeService } from "@/Services/employeeService";
 
 export const OrderForm: React.FC = () => {
   const addOrder = useOrderStore((s) => s.addOrder);
@@ -15,16 +14,8 @@ export const OrderForm: React.FC = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState<number>(1);
   const [submitting, setSubmitting] = useState(false);
-
-  // pickup: datetime-local value (string like "2025-08-17T08:30")
-  const [pickupLocal, setPickupLocal] = useState<string>(""); 
-  // employees
-  const [employees, setEmployees] = useState<{ id: string; name: string }[]>([]);
-  const [selectedEmployeeId, setSelectedEmployeeId] = useState<string | "">("");
-
-  useEffect(() => {
-    employeeService.getAll().then(setEmployees).catch(() => setEmployees([]));
-  }, []);
+  const [pickupLocal, setPickupLocal] = useState<string>(""); // value for <input type="datetime-local">
+  const [note, setNote] = useState<string>("");
 
   const price = selectedProduct?.price ?? 0;
   const total = Number((quantity * price).toFixed(2));
@@ -35,8 +26,12 @@ export const OrderForm: React.FC = () => {
 
     setSubmitting(true);
     try {
-      const pickupAtIso = pickupLocal ? new Date(pickupLocal).toISOString() : null;
-      const emp = employees.find((x) => x.id === selectedEmployeeId);
+      // convert datetime-local (if provided) to ISO before sending
+      let pickupIso: string | null = null;
+      if (pickupLocal) {
+        const d = new Date(pickupLocal);
+        if (!isNaN(d.getTime())) pickupIso = d.toISOString();
+      }
 
       await addOrder({
         customerName,
@@ -52,17 +47,16 @@ export const OrderForm: React.FC = () => {
         ],
         total,
         status: "pendente",
-        pickupAt: pickupAtIso,
-        createdById: emp?.id ?? null,
-        createdByName: emp?.name ?? null,
+        pickupAt: pickupIso,
+        note: note || undefined,
       });
 
-      // limpa
+      // limpa campos
       setCustomerName("");
       setSelectedProduct(null);
       setQuantity(1);
       setPickupLocal("");
-      setSelectedEmployeeId("");
+      setNote("");
     } finally {
       setSubmitting(false);
     }
@@ -85,7 +79,7 @@ export const OrderForm: React.FC = () => {
         <div className="grid grid-cols-3 gap-2">
           <div>
             <label className="block text-sm font-medium mb-1">Quantidade</label>
-            <Input type="number" value={quantity} onChange={(e) => setQuantity(Number(e.target.value) || 1)} min={1} />
+            <Input type="number" value={quantity} onChange={(e) => setQuantity(Number(e.target.value))} min={1} />
           </div>
 
           <div>
@@ -99,36 +93,28 @@ export const OrderForm: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-2">
-          <div>
-            <label className="block text-sm font-medium mb-1">Data/Hora de Retirada</label>
-            <Input
-              type="datetime-local"
-              value={pickupLocal}
-              onChange={(e) => setPickupLocal(e.target.value)}
-            />
-          </div>
+        <div>
+          <label className="block text-sm font-medium mb-1">Horário aproximado de retirada</label>
+          <input
+            type="datetime-local"
+            value={pickupLocal}
+            onChange={(e) => setPickupLocal(e.target.value)}
+            className="w-full border rounded px-2 py-1"
+            placeholder="Selecione data e hora"
+          />
+          <p className="text-xs text-slate-500 mt-1">O cliente informa quando pretende buscar o pedido na padaria.</p>
+        </div>
 
-          <div>
-            <label className="block text-sm font-medium mb-1">Funcionário</label>
-            <select
-              value={selectedEmployeeId}
-              onChange={(e) => setSelectedEmployeeId(e.target.value)}
-              className="mt-1 block w-full border rounded px-2 py-1"
-            >
-              <option value="">— Selecionar —</option>
-              {employees.map((emp) => (
-                <option key={emp.id} value={emp.id}>{emp.name}</option>
-              ))}
-            </select>
-          </div>
+        <div>
+          <label className="block text-sm font-medium mb-1">Observações (opcional)</label>
+          <Input value={note} onChange={(e) => setNote(e.target.value)} placeholder="Ex: entrega separada, sem glúten..." />
         </div>
 
         <div className="flex gap-2">
           <Button type="submit" disabled={submitting}>
             {submitting ? "Adicionando..." : "Adicionar Pedido"}
           </Button>
-          <Button variant="secondary" type="button" onClick={() => { setSelectedProduct(null); setQuantity(1); setPickupLocal(""); setSelectedEmployeeId(""); }}>
+          <Button variant="secondary" type="button" onClick={() => { setSelectedProduct(null); setQuantity(1); setPickupLocal(""); setNote(""); }}>
             Limpar
           </Button>
         </div>
