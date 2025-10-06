@@ -7,7 +7,7 @@ export type OrderItem = {
   quantity: number;
   price: number;
   total: number;
-  product?: Product; // optional, UI helper
+  product?: Product;
 };
 
 export type OrderStatus = "pendente" | "concluido" | "cancelado";
@@ -18,7 +18,8 @@ export type Order = {
   items: OrderItem[];
   total: number;
   status?: OrderStatus;
-  createdAt: string; // ISO string (set automatically)
-  pickupAt?: string | null; // ISO string (horário aproximado de retirada)
+  createdAt: string; // ISO
+  pickupAt?: string | null; // ISO
   note?: string;
+  createdBy?: string | null; // usuario que criou o pedido
 };
