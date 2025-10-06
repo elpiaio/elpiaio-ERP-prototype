@@ -8,7 +8,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 40
+        "quantity": 40,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -17,7 +19,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 30
+        "quantity": 30,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -26,7 +30,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 24
+        "quantity": 24,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -35,7 +41,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 30
+        "quantity": 30,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -51,7 +59,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -60,7 +70,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 50
+        "quantity": 50,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -69,7 +81,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 500
+        "quantity": 500,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -78,7 +92,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 300
+        "quantity": 300,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -87,7 +103,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 350
+        "quantity": 350,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -96,7 +114,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 450
+        "quantity": 450,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -105,7 +125,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 450
+        "quantity": 450,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -114,7 +136,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 900
+        "quantity": 900,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -123,7 +147,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 300
+        "quantity": 300,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -132,7 +158,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 500
+        "quantity": 500,
+        "cost": 0.3,
+        "price": 1.2
       }
     ],
     "tuesday": [
@@ -143,7 +171,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 42
+        "quantity": 42,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -152,7 +182,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 28
+        "quantity": 28,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -161,7 +193,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 26
+        "quantity": 26,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -170,7 +204,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 32
+        "quantity": 32,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -186,7 +222,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -195,7 +233,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 48
+        "quantity": 48,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -204,7 +244,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 480
+        "quantity": 480,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -213,7 +255,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 310
+        "quantity": 310,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -222,7 +266,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 340
+        "quantity": 340,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -231,7 +277,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 460
+        "quantity": 460,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -240,7 +288,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 440
+        "quantity": 440,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -249,7 +299,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 880
+        "quantity": 880,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -258,7 +310,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 290
+        "quantity": 290,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -267,7 +321,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 520
+        "quantity": 520,
+        "cost": 0.3,
+        "price": 1.2
       }
     ],
     "wednesday": [
@@ -278,7 +334,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 38
+        "quantity": 38,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -287,7 +345,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 32
+        "quantity": 32,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -296,7 +356,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 22
+        "quantity": 22,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -305,7 +367,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 29
+        "quantity": 29,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -321,7 +385,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -330,7 +396,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 52
+        "quantity": 52,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -339,7 +407,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 510
+        "quantity": 510,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -348,7 +418,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 295
+        "quantity": 295,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -357,7 +429,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 360
+        "quantity": 360,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -366,7 +440,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 445
+        "quantity": 445,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -375,7 +451,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 455
+        "quantity": 455,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -384,7 +462,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 920
+        "quantity": 920,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -393,7 +473,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 305
+        "quantity": 305,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -402,7 +484,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 490
+        "quantity": 490,
+        "cost": 0.3,
+        "price": 1.2
       }
     ],
     "thursday": [
@@ -413,7 +497,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 41
+        "quantity": 41,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -422,7 +508,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 31
+        "quantity": 31,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -431,7 +519,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 25
+        "quantity": 25,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -440,7 +530,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 33
+        "quantity": 33,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -456,7 +548,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -465,7 +559,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 49
+        "quantity": 49,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -474,7 +570,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 495
+        "quantity": 495,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -483,7 +581,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 305
+        "quantity": 305,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -492,7 +592,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 345
+        "quantity": 345,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -501,7 +603,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 455
+        "quantity": 455,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -510,7 +614,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 465
+        "quantity": 465,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -519,7 +625,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 890
+        "quantity": 890,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -528,7 +636,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 315
+        "quantity": 315,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -537,7 +647,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 510
+        "quantity": 510,
+        "cost": 0.3,
+        "price": 1.2
       }
     ],
     "friday": [
@@ -548,7 +660,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 44
+        "quantity": 44,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -557,7 +671,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 29
+        "quantity": 29,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -566,7 +682,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 27
+        "quantity": 27,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -575,7 +693,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 31
+        "quantity": 31,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -591,7 +711,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -600,7 +722,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 53
+        "quantity": 53,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -609,7 +733,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 505
+        "quantity": 505,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -618,7 +744,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 315
+        "quantity": 315,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -627,7 +755,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 355
+        "quantity": 355,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -636,7 +766,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 465
+        "quantity": 465,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -645,7 +777,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 445
+        "quantity": 445,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -654,7 +788,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 910
+        "quantity": 910,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -663,7 +799,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 295
+        "quantity": 295,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -672,7 +810,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 505
+        "quantity": 505,
+        "cost": 0.3,
+        "price": 1.2
       }
     ],
     "saturday": [
@@ -683,7 +823,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 46
+        "quantity": 46,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -692,7 +834,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 33
+        "quantity": 33,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -701,7 +845,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 28
+        "quantity": 28,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -710,7 +856,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 34
+        "quantity": 34,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -726,7 +874,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -735,7 +885,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 55
+        "quantity": 55,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -744,7 +896,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 520
+        "quantity": 520,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -753,7 +907,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 325
+        "quantity": 325,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -762,7 +918,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 365
+        "quantity": 365,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -771,7 +929,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 470
+        "quantity": 470,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -780,7 +940,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 480
+        "quantity": 480,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -789,7 +951,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 930
+        "quantity": 930,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -798,7 +962,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 320
+        "quantity": 320,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -807,7 +973,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 515
+        "quantity": 515,
+        "cost": 0.3,
+        "price": 1.2
       }
     ],
     "sunday": [
@@ -818,7 +986,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 35
+        "quantity": 35,
+        "cost": 1.2,
+        "price": 3.5
       },
       {
         "id": "i2",
@@ -827,7 +997,9 @@
         "subcategory": "Chocolate",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 27
+        "quantity": 27,
+        "cost": 1.3,
+        "price": 3.7
       },
       {
         "id": "i3",
@@ -836,7 +1008,9 @@
         "subcategory": "Goiaba",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 20
+        "quantity": 20,
+        "cost": 1.1,
+        "price": 3.2
       },
       {
         "id": "i4",
@@ -845,7 +1019,9 @@
         "subcategory": "Limão",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 28
+        "quantity": 28,
+        "cost": 1.0,
+        "price": 3.0
       },
       {
         "id": "i5",
@@ -861,7 +1037,9 @@
           "level2Name": "lata",
           "level2PerLevel1": 20,
           "unitsPerLevel2": 30
-        }
+        },
+        "cost": 0.15,
+        "price": 0.5
       },
       {
         "id": "i6",
@@ -870,7 +1048,9 @@
         "subcategory": "Sovado",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 45
+        "quantity": 45,
+        "cost": 0.8,
+        "price": 2.0
       },
       {
         "id": "i7",
@@ -879,7 +1059,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 480
+        "quantity": 480,
+        "cost": 0.6,
+        "price": 1.8
       },
       {
         "id": "i8",
@@ -888,7 +1070,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 285
+        "quantity": 285,
+        "cost": 0.7,
+        "price": 2.0
       },
       {
         "id": "i9",
@@ -897,7 +1081,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 335
+        "quantity": 335,
+        "cost": 0.75,
+        "price": 2.2
       },
       {
         "id": "i10",
@@ -906,7 +1092,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 440
+        "quantity": 440,
+        "cost": 0.65,
+        "price": 1.9
       },
       {
         "id": "i11",
@@ -915,7 +1103,9 @@
         "subcategory": "Nata",
         "method": "forno",
         "unit": "unidades",
-        "quantity": 430
+        "quantity": 430,
+        "cost": 0.8,
+        "price": 2.3
       },
       {
         "id": "i12",
@@ -924,7 +1114,9 @@
         "subcategory": "Fritura Variada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 870
+        "quantity": 870,
+        "cost": 0.2,
+        "price": 1.0
       },
       {
         "id": "i13",
@@ -933,7 +1125,9 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 285
+        "quantity": 285,
+        "cost": 0.4,
+        "price": 1.5
       },
       {
         "id": "i14",
@@ -942,13 +1136,15 @@
         "subcategory": "Fritura Salgada",
         "method": "fritura",
         "unit": "unidades",
-        "quantity": 485
+        "quantity": 485,
+        "cost": 0.3,
+        "price": 1.2
       }
     ]
   },
   "personalizedPlanning": [
     {
-     "day": "09/10/2025",
+      "day": "09/10/2025",
       "items": [
         {
           "id": "i1",
@@ -957,7 +1153,9 @@
           "subcategory": "Chocolate",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 40
+          "quantity": 45,
+          "cost": 1.2,
+          "price": 3.5
         },
         {
           "id": "i2",
@@ -966,7 +1164,9 @@
           "subcategory": "Chocolate",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 30
+          "quantity": 32,
+          "cost": 1.3,
+          "price": 3.7
         },
         {
           "id": "i3",
@@ -975,7 +1175,9 @@
           "subcategory": "Goiaba",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 24
+          "quantity": 26,
+          "cost": 1.1,
+          "price": 3.2
         },
         {
           "id": "i4",
@@ -984,7 +1186,9 @@
           "subcategory": "Limão",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 30
+          "quantity": 31,
+          "cost": 1.0,
+          "price": 3.0
         },
         {
           "id": "i5",
@@ -993,14 +1197,16 @@
           "subcategory": "Francês",
           "method": "forno",
           "unit": "armários",
-          "quantity": 10,
+          "quantity": 12,
           "breakdown": {
             "level1Name": "armário",
-            "level1Count": 10,
+            "level1Count": 12,
             "level2Name": "lata",
             "level2PerLevel1": 20,
             "unitsPerLevel2": 30
-          }
+          },
+          "cost": 0.15,
+          "price": 0.5
         },
         {
           "id": "i6",
@@ -1009,7 +1215,9 @@
           "subcategory": "Sovado",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 50
+          "quantity": 48,
+          "cost": 0.8,
+          "price": 2.0
         },
         {
           "id": "i7",
@@ -1018,7 +1226,9 @@
           "subcategory": "Nata",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 500
+          "quantity": 500,
+          "cost": 0.6,
+          "price": 1.8
         },
         {
           "id": "i8",
@@ -1027,7 +1237,9 @@
           "subcategory": "Nata",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 300
+          "quantity": 300,
+          "cost": 0.7,
+          "price": 2.0
         },
         {
           "id": "i9",
@@ -1036,7 +1248,9 @@
           "subcategory": "Nata",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 350
+          "quantity": 350,
+          "cost": 0.75,
+          "price": 2.2
         },
         {
           "id": "i10",
@@ -1045,7 +1259,9 @@
           "subcategory": "Nata",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 450
+          "quantity": 450,
+          "cost": 0.65,
+          "price": 1.9
         },
         {
           "id": "i11",
@@ -1054,7 +1270,9 @@
           "subcategory": "Nata",
           "method": "forno",
           "unit": "unidades",
-          "quantity": 450
+          "quantity": 450,
+          "cost": 0.8,
+          "price": 2.3
         },
         {
           "id": "i12",
@@ -1063,7 +1281,9 @@
           "subcategory": "Fritura Variada",
           "method": "fritura",
           "unit": "unidades",
-          "quantity": 900
+          "quantity": 900,
+          "cost": 0.2,
+          "price": 1.0
         },
         {
           "id": "i13",
@@ -1072,7 +1292,9 @@
           "subcategory": "Fritura Salgada",
           "method": "fritura",
           "unit": "unidades",
-          "quantity": 300
+          "quantity": 300,
+          "cost": 0.4,
+          "price": 1.5
         },
         {
           "id": "i14",
@@ -1081,7 +1303,9 @@
           "subcategory": "Fritura Salgada",
           "method": "fritura",
           "unit": "unidades",
-          "quantity": 500
+          "quantity": 500,
+          "cost": 0.3,
+          "price": 1.2
         }
       ]
     }
