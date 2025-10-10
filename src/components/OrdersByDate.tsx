@@ -7,6 +7,7 @@ import FilterModal from "./FilterModal";
 import { matchesFilter } from "@/Libs/filterUtils";
 import { OrderFilter } from "@/Types/filter";
 import { Button } from "@/components/ui/button";
+import { Eraser, ListFilter } from "lucide-react";
 
 function formatDateKey(iso?: string) {
   if (!iso) return "Sem data";
@@ -52,8 +53,8 @@ export default function OrdersByDate() {
       <div className="flex justify-between items-center">
         <h2 className="text-lg font-semibold">Pedidos (por data)</h2>
         <div className="flex gap-2">
-          <Button onClick={() => setFilterOpen(true)}>Filtrar</Button>
-          <Button variant="ghost" onClick={() => setFilter(undefined)}>Limpar filtros</Button>
+          <Button className="cursor-pointer" onClick={() => setFilterOpen(true)}><ListFilter /></Button>
+          <Button className="cursor-pointer" variant="destructive" onClick={() => setFilter(undefined)}><Eraser /></Button>
         </div>
       </div>
 
