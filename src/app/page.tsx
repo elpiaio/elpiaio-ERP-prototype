@@ -4,22 +4,18 @@ import React from "react";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-// Importar ícones específicos do Lucide React
-import { ArrowRight, Plus, List, Factory, Settings, Calendar, Edit3 } from "lucide-react"; 
 
-/**
- * Minimal, clean homepage with grouped tiles (Pedidos / Produção).
- * Small descriptions, large touch targets, reduced visual noise.
- */
+import { ArrowRight, Plus, List, Factory, Settings, Calendar, Edit3 } from "lucide-react"; 
 
 // Usar o Tile Component Aprimorado (ver seção 1 acima)
 const Tile: React.FC<{
   title: string;
   subtitle?: string;
   href: string;
-  isPrimary?: boolean; // Novo prop para destacar o tile
-  icon: React.ReactNode; // Tornar o ícone obrigatório
+  isPrimary?: boolean; // prop para destacar o tile
+  icon: React.ReactElement;
 }> = ({ title, subtitle, href, isPrimary = false, icon }) => {
+
   // ... Código do Tile Aprimorado (igual ao da seção 1) ...
   const baseClasses = "group flex items-center justify-between p-5 transition cursor-pointer";
   const hoverClasses = isPrimary ? "hover:shadow-xl hover:scale-[1.01] bg-blue-50 border-blue-100" : "hover:shadow-lg";
@@ -33,7 +29,7 @@ const Tile: React.FC<{
       <Card className={`${baseClasses} ${hoverClasses} ${cardClasses}`}>
         <div className="flex items-center gap-4">
           <div className={`flex items-center justify-center w-12 h-12 rounded-xl transition ${iconBg}`}>
-            {React.cloneElement(icon as React.ReactElement, { className: "w-6 h-6 transition ${iconColor}" })}
+            {React.cloneElement(icon as React.ReactElement, { className: `w-6 h-6 transition ${iconColor}` })}
           </div>
           <div>
             <div className={`text-lg font-semibold leading-tight ${isPrimary ? 'text-slate-900' : 'text-slate-700'}`}>{title}</div>
